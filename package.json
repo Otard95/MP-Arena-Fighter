@@ -1,0 +1,43 @@
+{
+  "name": "mp-arena-fighter",
+  "version": "0.0.1",
+  "description": "A simple multiplayer arena using socket.io and p5.js /p5.play",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otard95/MP-Arena-Fighter.git"
+  },
+  "keywords": [
+    "mp",
+    "arena",
+    "game",
+    "js",
+    "express",
+    "socket.io",
+    "p5.js",
+    "p5.play"
+  ],
+  "author": "Otard95",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Otard95/MP-Arena-Fighter/issues"
+  },
+  "homepage": "https://github.com/Otard95/MP-Arena-Fighter#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

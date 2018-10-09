@@ -3,7 +3,6 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const nodemon = require('gulp-nodemon');
 const rename = require('gulp-rename');
 
 gulp.task('sass', () => {
@@ -15,24 +14,7 @@ gulp.task('sass', () => {
 
 });
 
-gulp.task('serve', () => {
-
-  nodemon({
-    script: './bin/www',
-    ext: 'js',
-    ignore: [
-      './views/',
-      './public/',
-      './_sass/',
-      './.git/',
-      './node-modules'
-    ],
-    env: { 'NODE_ENV': 'development' }
-  });
-
-});
-
-gulp.task('default', ['sass', 'serve'], () => {
+gulp.task('default', ['sass'], () => {
 
   gulp.watch(['./_sass/*.sass', './_sass/**/*.sass'], ['sass']);
 
